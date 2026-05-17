@@ -88,15 +88,15 @@ function VerifyProd() {
     const now = new Date();
     const mfg = new Date(now.getTime() - 1000 * 60 * 60 * 24 * 187);
     const fmt = (d: Date) =>
-      d.toLocaleDateString("ar-EG", { day: "2-digit", month: "long", year: "numeric" });
+      d.toLocaleDateString("ar-EG-u-nu-latn", { day: "2-digit", month: "long", year: "numeric" });
     setData({
-      productName: "largoMax — كريم أصلي ٥٠ مل",
+      productName: "largoMax — كريم أصلي 50 مل",
       batch: "LX-" + Math.floor(100000 + Math.random() * 899999),
       mfg: fmt(mfg),
       verified:
         fmt(now) +
         " · " +
-        now.toLocaleTimeString("ar-EG", { hour: "2-digit", minute: "2-digit" }),
+        now.toLocaleTimeString("ar-EG-u-nu-latn", { hour: "2-digit", minute: "2-digit" }),
       country: "موريتانيا",
       serial: randomSerial(),
     });
