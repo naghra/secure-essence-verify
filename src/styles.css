@@ -137,8 +137,16 @@
     border-color: var(--color-border);
   }
 
-  body {
+  html, body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+    font-feature-settings: "kern", "liga", "calt";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :lang(ar), [dir="rtl"] {
+    font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
   }
 }
