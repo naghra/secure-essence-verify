@@ -96,7 +96,7 @@ function VerifyProd() {
         fmt(now) +
         " · " +
         now.toLocaleTimeString("ar-EG", { hour: "2-digit", minute: "2-digit" }),
-      country: "الإمارات العربية المتحدة",
+      country: "موريتانيا",
       serial: randomSerial(),
     });
   }, [done]);
