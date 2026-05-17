@@ -291,6 +291,7 @@ function SuccessScreen({
     { label: "تاريخ الإنتاج", value: data.mfg, icon: Calendar },
     { label: "تاريخ التحقق", value: data.verified, icon: BadgeCheck },
     { label: "بلد التحقق", value: data.country, icon: Globe2 },
+    { label: "بلد الصنع", value: "ألمانيا", icon: Factory },
     { label: "الحالة", value: "أصلي", icon: ShieldCheck, accent: true },
   ];
 
