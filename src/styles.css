@@ -149,4 +149,9 @@
   :lang(ar), [dir="rtl"] {
     font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
   }
+
+  /* Arabic letters must stay joined — disable letter-spacing on RTL/Arabic text */
+  [dir="rtl"], [dir="rtl"] *, :lang(ar), :lang(ar) * {
+    letter-spacing: 0 !important;
+  }
 }
