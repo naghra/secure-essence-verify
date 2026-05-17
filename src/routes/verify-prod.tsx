@@ -15,6 +15,7 @@ import {
   BadgeCheck,
   LifeBuoy,
   AlertTriangle,
+  Factory,
 } from "lucide-react";
 import productImg from "../assets/product.png";
 
